@@ -49,6 +49,33 @@ const Center = () => {
             <p>Diagonistic List</p>
           </div>
           <div className="table">
+          <table>
+            <tr className="table_header">
+              <th>Problem/Diagnosis</th>
+              <th>Description</th>
+              <th className="status">Status</th>
+            </tr>
+            <tr>
+              <td>Hypertension</td>
+              <td>Chronic high blood pressure</td>
+              <td className="status">Under Observation</td>
+            </tr>
+            <tr>
+              <td>Type 2 Diabetes</td>
+              <td>Insulin resistance and elevated blood sugar</td>
+              <td className="status">Cured</td>
+            </tr>
+            <tr>
+              <td>Asthma</td>
+              <td>Recurrent episodes of bronchial constriction</td>
+              <td className="status">Inactive</td>
+            </tr>
+            
+            
+          </table>
+          </div>
+
+          {/* <div className="table">
             <div className="problemm"> <span className="title">Problem</span>
               <p>Hypertension</p>
               <p>Hypertension</p>
@@ -69,7 +96,7 @@ const Center = () => {
               <p>Cured</p>
               <p>Inactive</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
