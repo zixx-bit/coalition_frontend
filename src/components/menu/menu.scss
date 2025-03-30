@@ -1,0 +1,143 @@
+.menu {
+  height: 72px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+
+  .logo {
+    // margin-left: 32px;
+    // flex: 1;
+    background-color: #fff;
+    // border-radius: 70px 0px 0px 70px;
+    text-align: center;
+    img {
+      height: 48px;
+      // width: 211px;
+      background: transparent;
+    }
+  }
+  .menu_section {
+    // flex: 2;
+    // margin-left: 237px;
+    // margin-right: 173px;
+    // width: 663px;
+    height: 63px;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    gap: 24px;
+    list-style: none;
+    background: transparent;
+    // background-color: brown;
+
+    li {
+      display: flex;
+      gap: 8px;
+      width: 122px;
+      height: 41px;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      background: transparent;
+      border-radius: 41px;
+      span {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // gap: 8px;
+      }
+      .icons {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        width: auto;
+        gap: 8px;
+        height: 17px;
+      }
+
+      img {
+        // display: flex;
+        // gap: 5px;
+      }
+    }
+    .patients {
+      background: hsl(172, 99%, 47%) 0% 0% no-repeat padding-box;
+      span {
+        background: transparent;
+      }
+      img {
+        background: transparent;
+      }
+    }
+  }
+
+  .user_section {
+    // flex: 1;
+    // padding-right: 32px;
+    background: transparent;
+    // border-radius: 0px 70px 70px 0px;
+    .user {
+      // width: 240.66px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: transparent;
+
+      .userImage {
+        background: transparent;
+        img {
+            width: 44px;
+            height: 44px;
+          background: transparent;
+        }
+      }
+
+      .userDetails {
+        background: transparent;
+        .name {
+            // width: 119px;
+            height: 19px;
+          font-size: 14px;
+          font-weight: bold;
+          background: transparent;
+        }
+        .title {
+            height: 19px;
+            // width: 129px;
+          background: transparent;
+          font-size: 14px;
+          font-weight: lighter;
+          color: #707070;
+        }
+      }
+      .vr {
+        width: 1px;
+        height: 44px;
+        font-weight: lighter;
+        background-color: #ededed;
+        display: inline-block;
+      }
+      .settingsImage {
+        background: transparent;
+        img{
+            width: 26px;
+            height: 26px;
+        }
+
+      }
+      .moreImage {
+        background: transparent;
+        img{
+            height: 27px;
+        }
+      }
+    }
+  }
+}

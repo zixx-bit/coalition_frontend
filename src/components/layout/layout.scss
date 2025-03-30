@@ -1,0 +1,34 @@
+
+.layout{
+    margin-top: 32px;
+    // width: 1564px;
+    display: flex;
+    // flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+
+    .left_side{
+        height: 1054px;
+        width: 367px;
+        // border-radius: 16px;
+        // background: #fff;
+    }
+
+    .center{
+        // flex: 3;
+        width: 766px;
+        height: 673px;
+        border-radius: 16px;
+        height: 908px;
+    }
+    
+    .right_side{
+        margin-top: -14px;
+        width: 367px;
+        height: 740px;
+        border-radius: 16px;
+        // background-color: #fff;
+       }
+}

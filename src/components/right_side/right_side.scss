@@ -1,0 +1,179 @@
+.Patient {
+  //    width: 367px;
+  //    height: 740px;
+  padding-top: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  .patientUser {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    .patientImage {
+      background: transparent;
+      img {
+        margin-left: 83px;
+        margin-right: 84px;
+        background: transparent;
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .patient_name {
+      background: transparent;
+      font-weight: bolder;
+      font-size: 24px;
+    }
+  }
+
+  .patientDetails {
+    background: transparent;
+    // display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // gap: 24px;
+
+    .detail {
+      background: transparent;
+      // display: flex;
+      // flex-direction: column;
+      // gap: 4px;
+    }
+    ul {
+      background: transparent;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      li {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        .icon {
+          background: transparent;
+          // background: #F6F7F8;
+
+          img {
+            width: 42px;
+            border-radius: 42px;
+            height: 42px;
+          }
+        }
+        .title {
+          background: transparent;
+          font-size: 14px;
+        }
+        .detail {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-top: 29px;
+    margin-bottom: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    // padding-bottom: 32px;
+    button {
+      width: 220px;
+      height: 41px;
+      background: #01f0d0;
+      border-radius: 41px;
+      border: #01f0d0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.lab_results {
+  margin-top: 32px;
+  padding-right: 20px;
+
+  // width: 367px;
+  height: 296px;
+  border-radius: 16px;
+  padding-left: 22px;
+  padding-top: 20px;
+  padding-right: 20px;
+  background: #fff;
+  .labTitle {
+    background: red;
+    height: 33px;
+    span {
+      font-size: 24px;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 33px;
+      color: #072635;
+      background: #fff;
+    }
+  }
+  .labDesign {
+    background: red;
+    display: flex;
+    // justify-content: space-between;
+    gap: 16px;
+    margin-right: 20px;
+  }
+
+  .tests {
+    background: #fff;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .labResult {
+      background: #fff;
+      width: 315px;
+      height: 40px;
+      display: flex;
+      // padding-left: 18px;
+      align-items: center;
+      justify-content: space-between;
+      .ctScan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background: #1d63a9;
+        width: 100%;
+        height: 100%;
+      }
+
+      p {
+        background: #fff;
+      }
+
+      span {
+        img {
+          background: #fff;
+        }
+        // flex: none;
+      }
+    }
+  }
+
+  .scroll {
+    border-radius: 3px;
+    margin-top: 16px;
+
+    .topScroll {
+      width: 6px;
+      border-radius: 3px;
+      height: 51px;
+      background: black;
+    }
+  }
+}

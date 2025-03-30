@@ -1,0 +1,136 @@
+.leftSide {
+  // width: 367px;
+  // height: 1054px;
+   // padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 16px;
+  
+  .top{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-left: 20px;
+    // margin-top: 40px;
+   
+    .title{
+      background: #fff;
+
+      font-weight: bold;  
+      h4{
+        font-weight: bolder;
+        font-size: 24px;
+      }  
+    }
+  }
+
+.patients{
+ width: 367px;
+  border-radius: 16px;
+  padding-left: 20px;
+  // padding-top: 20px;
+  // margin-right:  20px;
+  display: flex;
+  gap: 20px;
+  // align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: start;
+  background: #fff;
+  .patientsDesign{
+    width: 317px;
+    height: 48px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+  }
+
+
+     
+      .patient{
+          background: #fff;
+          display: flex;
+          flex-direction: row;
+          
+          align-items: center;
+          // gap: 32px;
+          justify-content: space-between;
+          
+          .profile{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            .profileImg{
+              background: transparent;
+              img{
+                width: 48px;
+                height: 48px;
+                background: transparent;
+              }
+            }
+            .text{
+              margin-top: 3px;
+              margin-bottom: 3px;
+              background: transparent;
+              flex: none;
+              
+              p{
+                font-size: 14px;
+                .name{
+                  font-weight: bold;
+                  background: #fff;
+                }
+                .ageGender{
+                  color: #707070;
+                  font-weight: normal;
+                  padding-top: 4px;
+                  background: #fff;
+                  // font-weight: bold;
+                }
+              }
+            }
+          }      
+          p{
+              background: #fff;
+              display: flex;
+              flex-direction: column;
+          }
+          span{
+              img{
+                  background: #fff;
+
+              }
+              // flex: none;
+          }
+
+      .moreImageHoriz{
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+          .scroll{
+
+              border-radius: 3px;
+              height: 941px;
+              margin-right: 4px;
+              margin-bottom: 20px;
+            .topScroll {
+          width: 6px;
+          border-radius: 3px;
+          height: 100px;
+          background: black;
+        }
+      }
+
+     }
+
+  }
