@@ -10,8 +10,9 @@
     gap: 32px;
 
     .left_side{
-        height: 1054px;
+        max-height: 1054px;
         width: 367px;
+        margin-bottom: 19px;
         // border-radius: 16px;
         // background: #fff;
     }
@@ -21,14 +22,16 @@
         width: 766px;
         height: 673px;
         border-radius: 16px;
-        height: 908px;
+        max-height: 908px;
+        margin-bottom: 17px;
     }
     
     .right_side{
         margin-top: -14px;
-        width: 367px;
-        height: 740px;
+        max-width: 367px;
+        max-height: 740px;
         border-radius: 16px;
+        margin-bottom: 19px;
         // background-color: #fff;
        }
 }

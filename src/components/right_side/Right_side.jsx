@@ -111,6 +111,14 @@ const Right_side = () => {
             </div>
 
             <div className="labResult">
+              <p>Radiology Reports</p>
+              <span>
+                <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
+              </span>
+            </div>
+
+
+            <div className="labResult">
               <p>X-Rays</p>
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
