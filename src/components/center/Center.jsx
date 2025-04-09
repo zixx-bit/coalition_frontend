@@ -1,12 +1,15 @@
 import React from "react";
 import "./center.scss";
+import Data from "../../lib/data";
 
 const Center = () => {
   return (
     <div className="center">
       <div className="top">
         <h3>Diagnosis History</h3>
-        <div className="chart"></div>
+        <div className="chart">
+          <Data/>
+        </div>
         <div className="readings">
           <div className="respiratoryRate">
             <div className="icon">
@@ -69,11 +72,15 @@ const Center = () => {
               <td>Asthma</td>
               <td>Recurrent episodes of bronchial constriction</td>
               <td className="status">Inactive</td>
-            </tr>
-            
-            
+            </tr>          
           </table>
+          <div className="scroll">
+            <div className="topScroll"></div>
+            {/* <div className="bottomScroll"></div> */}
           </div>
+       </div>
+
+       
 
           {/* <div className="table">
             <div className="problemm"> <span className="title">Problem</span>

@@ -100,7 +100,6 @@
 .lab_results {
   margin-top: 32px;
   padding-right: 20px;
-
   max-width: 367px;
   max-height: 296px;
   border-radius: 16px;
@@ -123,7 +122,9 @@
     }
   }
   .labDesign {
-    background: #fff;
+    margin-top: 27px;
+
+    background: transparent;
     display: flex;
     justify-content: space-between;
     // gap: 16px;
@@ -131,15 +132,16 @@
   }
 
   .tests {
-    background: #fff;
-    margin-top: 27px;
+    background: transparent;
     display: flex;
     flex-direction: column;
+    // margin-top: 10px;
+    margin-bottom: -19px;
     // overflow-x: scroll;
     // gap: 5px;
 
     .labResult {
-      background: #fff;
+      background: transparent;
       width: 315px;
       margin-left: 2px;
       display: flex;

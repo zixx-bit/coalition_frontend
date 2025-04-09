@@ -108,27 +108,40 @@
       }
 
     }
-    .table {
+
+    
+
+  .table {
+    display: flex;
+    width: 100%;
+
+    gap: 50px;
       table{
-        // width: 100%;
         border-collapse: collapse;
         // border: 1px solid #ddd;
         margin-top: 20px;
+        padding-left: 20px;
         // display: flex;
         // flex-direction: column;
         // justify-content: space-between;
         // gap: 37px;
         .table_header{
+          width: 726px;
+          height: 48px;
           text-align: left;
           background: #F6F7F8;
-          border-radius: 24px;
-          padding-left: 20px;
-          padding-right: 20px;
+          margin-right: 20px;
+          // padding-left: 20px;
+          // padding-right: 20px;
+          border-radius: 5px;
+
           th{
+            // border-radius: 24px;
           padding-top: 20px;
           padding-bottom: 20px;
           padding-left: 16px;
           padding-right: 31px;
+          border-radius: 10px;
         }
         }
         td{
@@ -143,112 +156,22 @@
           max-width: 79px;
         }
         
+        
     }
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .scroll {
+      border-radius: 3px;
+      margin-top: 16px;
+      height: 207px;
+      margin-left: 4px;
       background: #fff;
-      gap: 37px;
-    
-
-      .problemm {
-        background: #fff;
-        width: 269px;
-        display: flex;
-        flex-direction: column;
-        // gap: 37px;
-        p{
-            background: #fff;
-        }
-        .title{
-            background: #F6F7F8;
-          }
-
+  
+      .topScroll {
+        width: 6px;
+        border-radius: 3px;
+        height: 51px;
+        background: black;
       }
-      .descriptionn {
-       
-        display: flex;
-        flex-direction: column;
-        width: 287px;
-        p{
-            background: #fff;
-
-        }
-        // display: flex;
-        // flex-direction: column;
-      }
-      .statuss {
-        display: flex;
-        flex-direction: column;
-        background: #fff;
-        width: 210px;
-        p{
-            background: #fff;
-
-        }
-        // align-items: center;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: space-between;
-      }
-
-      .tableHead {
-        .tableHeadData {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          p {
-            font-weight: bold;
-          }
-          .problem {
-            width: 129px;
-            height: 19px;
-            padding-left: 16px;
-          }
-          .description {
-            margin-left: 104px;
-            margin-right: 285px;
-          }
-          .status {
-            padding-right: 67px;
-          }
-        }
-        .tableData {
-          width: 723px;
-          height: 59px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background: #fff;
-
-          p {
-            font-weight: normal;
-          }
-          .problemData {
-            background: #fff;
-
-            // width: 129px;
-            // height: 19px;
-            padding-left: 16px;
-          }
-          .descriptionData {
-            background: #fff;
-
-            width: 287px;
-            // height: 19px;
-            // margin-left: 104px;
-            // margin-right: 285px;
-          }
-          .statusData {
-            background: #fff;
-            width: 79px;
-            height: 38px;
-            // padding-right: 67px;
-          }
-        }
-      }
+     }
     }
   }
 }
