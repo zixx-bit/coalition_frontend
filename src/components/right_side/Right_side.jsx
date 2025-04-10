@@ -26,7 +26,7 @@ const Right_side = () => {
               </li>
               <li>
                 <div className="title">Date Of Birth</div>
-                <div className="detail">August 23, 1996</div>
+                <div className="detail">{patient.date_of_birth}</div>
               </li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Right_side = () => {
               </li>
               <li>
                 <div className="title">Gender</div>
-                <div className="detail">Female</div>
+                <div className="detail">{patient.gender}</div>
               </li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ const Right_side = () => {
               </li>
               <li>
                 <div className="title">Contact Info</div>
-                <div className="detail">(415) 555-1234</div>
+                <div className="detail">{patient.phone_number}</div>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ const Right_side = () => {
               </li>
               <li>
                 <div className="title">Emergency Contacts</div>
-                <div className="detail">(415) 555-5678</div>
+                <div className="detail">{patient.emergency_contact}</div>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ const Right_side = () => {
               </li>
               <li>
                 <div className="title">Insurance Provider</div>
-                <div className="detail">Sunrise Health Assurance</div>
+                <div className="detail">{patient.insurance_type}</div>
               </li>
             </ul>
           </div>
@@ -99,7 +99,7 @@ const Right_side = () => {
         <div className="labDesign">
           <div className="tests">
             <div className="labResult">
-              <p>Blood Tests</p>
+              <p>{patient.lab_results[0]}</p>
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -107,7 +107,7 @@ const Right_side = () => {
 
             <div className="labResult">
             <div className="ctScan">
-              <p>CTScans</p>
+              <p>{patient.lab_results[1]}</p>
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -115,7 +115,7 @@ const Right_side = () => {
             </div>
 
             <div className="labResult">
-              <p>Radiology Reports</p>
+              <p>{patient.lab_results[2]}</p>
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -123,16 +123,14 @@ const Right_side = () => {
 
 
             <div className="labResult">
-              <p>X-Rays</p>
+              <p>{patient.lab_results[3]}</p>
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
             </div>
 
             <div className="labResult">
-              <p>Urine Test</p>
               <span>
-                <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
             </div>
           </div>
