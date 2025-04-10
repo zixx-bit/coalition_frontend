@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Data = () => {
-  const [patient, setPatient] = useState([]);
+  let [patients, setPatients] = useState([]);
 
   useEffect(() => {    
     const username = 'coalition';
@@ -15,25 +15,21 @@ const Data = () => {
       }
     })
     .then((res) => {
-      console.log(res.data);
-      setPatient(res.data);
+      console.log(res.data[3]);
+      setPatients(res.data[3]);
+      
     })
     .catch((err) => {
       console.error('Error fetching data', err);
     }); 
   }, []);
 
+  const Jessica = patients[3];
+  console.log(Jessica)
+
   return (
     <div>
-      <h1>patient</h1>
-      <ul>
-      {patient.map(())}
-      <ul>
-        {Object.entries(patient).map(([key, value]) => (
-          <li key={key}>{patient.name}</li>
-        ))}
-      </ul>
-      </ul>
+      <h3>{patients.name}</h3>
     </div>
   );
 };
@@ -42,14 +38,3 @@ export default Data;
 
 
 
-
-
-
-
-  // return (
-  //   <div>
-  //     {meals.map((meal) => (
-  //     <img key={meal.idMeal} src={meal.strMealThumb} alt={meal.strMeal} width={400}/>
-  //     ))}
-  //   </div>
-  //   )
