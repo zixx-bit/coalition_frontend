@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Data = () => {
-  let [patients, setPatients] = useState([]);
+export const PatientContext = createContext();
+
+const PatientProvider = ({ children }) => {
+  const [patient, setPatient] = useState([]);
 
   useEffect(() => {    
     const username = 'coalition';
@@ -16,7 +18,7 @@ const Data = () => {
     })
     .then((res) => {
       console.log(res.data[3]);
-      setPatients(res.data[3]);
+      setPatient(res.data[3]);
       
     })
     .catch((err) => {
@@ -24,17 +26,16 @@ const Data = () => {
     }); 
   }, []);
 
-  const Jessica = patients[3];
-  console.log(Jessica)
 
   return (
-    <div>
-      <h3>{patients.name}</h3>
-    </div>
+    <PatientContext.Provider value={{patient}}>
+      {children}
+    </PatientContext.Provider>
+    
   );
 };
 
-export default Data;
+export default PatientProvider;
 
 
 

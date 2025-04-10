@@ -1,7 +1,11 @@
-import React from "react";
+
+import { useContext } from "react";
+
 import "./right_side.scss";
+import { PatientContext } from "../../lib/data";
 
 const Right_side = () => {
+  const {patient} = useContext(PatientContext);
   return (
     <div className="right">
       <div className="Patient">
@@ -9,7 +13,7 @@ const Right_side = () => {
           <div className="patientImage">
             <img src="Layer 2@2x.png" />
           </div>
-          <div className="patient_name">Jessica Taylor</div>
+          <div className="patient_name">{patient.name}</div>
         </div>
 
         <div className="patientDetails">
