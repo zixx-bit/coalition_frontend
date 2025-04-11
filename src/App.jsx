@@ -8,10 +8,8 @@ function App() {
   return (
     <div>
       <PatientProvider>
-       
       <Menu/>
       <Layout/>
-       
       </PatientProvider>
     </div>
   )

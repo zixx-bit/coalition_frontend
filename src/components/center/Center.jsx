@@ -1,14 +1,17 @@
-import React from "react";
+import { useContext } from "react";
 import "./center.scss";
-import Data from "../../lib/data";
+import { PatientContext } from "../../lib/data";
+
+
+// import Data from "../../lib/data";
 
 const Center = () => {
+  const {patient} = useContext(PatientContext);
   return (
     <div className="center">
       <div className="top">
         <h3>Diagnosis History</h3>
         <div className="chart">
-          <Data/>
         </div>
         <div className="readings">
           <div className="respiratoryRate">
@@ -58,20 +61,25 @@ const Center = () => {
               <th>Description</th>
               <th className="status">Status</th>
             </tr>
-            <tr>
-              <td>Hypertension</td>
-              <td>Chronic high blood pressure</td>
-              <td className="status">Under Observation</td>
+            <tr >
+              <td>{patient.diagnostic_list[0].name}</td>
+              <td>{patient.diagnostic_list[0].description}</td>
+              <td className="status">{patient.diagnostic_list[0].status}</td>
             </tr>
             <tr>
-              <td>Type 2 Diabetes</td>
-              <td>Insulin resistance and elevated blood sugar</td>
-              <td className="status">Cured</td>
+              <td> {patient.diagnostic_list[1].name}</td>
+              <td>{patient.diagnostic_list[1].description}</td>
+              <td className="status">{patient.diagnostic_list[1].status}|</td>
             </tr>
             <tr>
-              <td>Asthma</td>
-              <td>Recurrent episodes of bronchial constriction</td>
-              <td className="status">Inactive</td>
+              <td>{patient.diagnostic_list[2].name}</td>
+              <td>{patient.diagnostic_list[2].description}</td>
+              <td className="status">{patient.diagnostic_list[2].status}</td>
+            </tr> 
+            <tr>
+              <td>{patient.diagnostic_list[3].name}</td>
+              <td>{patient.diagnostic_list[3].description}</td>
+              <td className="status">{patient.diagnostic_list[3].status}</td>
             </tr>          
           </table>
           <div className="scroll">

@@ -1,6 +1,5 @@
 
 import { useContext } from "react";
-
 import "./right_side.scss";
 import { PatientContext } from "../../lib/data";
 
@@ -99,7 +98,8 @@ const Right_side = () => {
         <div className="labDesign">
           <div className="tests">
             <div className="labResult">
-              <p>{patient.lab_results[0]}</p>
+              {/* <p>{patient.lab_results[0]}</p> */}
+
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -107,7 +107,7 @@ const Right_side = () => {
 
             <div className="labResult">
             <div className="ctScan">
-              <p>{patient.lab_results[1]}</p>
+              {/* <p>{patient.lab_results[1]}</p> */}
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -115,7 +115,7 @@ const Right_side = () => {
             </div>
 
             <div className="labResult">
-              <p>{patient.lab_results[2]}</p>
+              {/* <p>{patient.lab_results[2]}</p> */}
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
@@ -123,7 +123,7 @@ const Right_side = () => {
 
 
             <div className="labResult">
-              <p>{patient.lab_results[3]}</p>
+              {/* <p>{patient.lab_results[3]}</p> */}
               <span>
                 <img src="download_FILL0_wght300_GRAD0_opsz24.svg" />
               </span>
